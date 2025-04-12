@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Cashoo</string>
+    <string name="title_home">Home</string>
+    <string name="title_analysis">Analysis</string>
+    <string name="title_add">Add</string>
+    <string name="title_category">Category</string>
+    <string name="title_rewards">Rewards</string>
+    <string name="back">Back</string>
+    <string name="search">Search</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+</resources>
