@@ -1,20 +1,15 @@
-package com.iie.st10320489.marene.ui.add
+package com.iie.st10320489.marene.ui.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
-import com.iie.st10320489.marene.databinding.FragmentAddBinding
+import com.iie.st10320489.marene.databinding.FragmentHomeTransactionsBinding
 
-class AddFragment : Fragment() {
+class HomeTransactionFragment : Fragment() {
 
-    private var _binding: FragmentAddBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
+    private var _binding: FragmentHomeTransactionsBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -22,10 +17,10 @@ class AddFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentAddBinding.inflate(inflater, container, false)
+        // Inflate the layout using ViewBinding
+        _binding = FragmentHomeTransactionsBinding.inflate(inflater, container, false)
         return binding.root
     }
-
 
     override fun onDestroyView() {
         super.onDestroyView()
