@@ -29,11 +29,50 @@
         android:id="@+id/navigation_category"
         android:name="com.iie.st10320489.marene.ui.category.CategoryFragment"
         android:label="@string/title_category"
-        tools:layout="@layout/fragment_category" />
+        tools:layout="@layout/fragment_category">
+
+        <action
+            android:id="@+id/action_categoryFragment_to_transactionFragment"
+            app:destination="@id/transactionFragment" />
+
+        <action
+            android:id="@+id/action_categoryFragment_to_subcategoryFragment"
+            app:destination="@id/subcategoryFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_rewards"
         android:name="com.iie.st10320489.marene.ui.rewards.RewardsFragment"
         android:label="@string/title_rewards"
         tools:layout="@layout/fragment_rewards" />
+
+    <fragment
+        android:id="@+id/transactionFragment"
+        android:name="com.iie.st10320489.marene.ui.transaction.TransactionFragment"
+        android:label="Transactions"
+        tools:layout="@layout/fragment_transaction">
+        <argument
+            android:name="categoryName"
+            app:argType="string" />
+        <!-- Add the navigation action here -->
+        <action
+            android:id="@+id/action_transactionFragment_to_transactionDetailsFragment"
+            app:destination="@id/transactionDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/transactionDetailsFragment"
+        android:name="com.iie.st10320489.marene.ui.transaction.TransactionDetailFragment"
+        android:label="Transaction Details"
+        tools:layout="@layout/fragment_transaction_details" />
+
+    <fragment
+        android:id="@+id/subcategoryFragment"
+        android:name="com.iie.st10320489.marene.ui.subcategory.SubcategoryFragment"
+        android:label="Subcategories"
+        tools:layout="@layout/fragment_subcategory">
+        <action
+            android:id="@+id/action_subcategoryFragment_to_transactionFragment"
+            app:destination="@id/transactionFragment" />
+    </fragment>
 </navigation>

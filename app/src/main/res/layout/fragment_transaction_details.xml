@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:divider="@android:color/transparent"
+        android:showDividers="middle"
+        android:dividerPadding="8dp">
+
+        <!-- Name -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:paddingBottom="11dp"
+            android:fontFamily="@font/inter_bold"
+            android:textStyle="bold"
+            android:textColor="@color/text_heading"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="21dp"
+            android:background="@drawable/bordered_box"
+            android:fontFamily="@font/inter_regular"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:paddingLeft="21dp"
+            android:paddingRight="21dp"
+
+            android:textColor="@color/text"
+            android:textSize="18sp" />
+
+        <!-- Amount -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amount"
+            android:paddingBottom="11dp"
+            android:fontFamily="@font/inter_bold"
+            android:textStyle="bold"
+            android:textColor="@color/text_heading"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-R150.00"
+            android:background="@drawable/bordered_box"
+            android:fontFamily="@font/inter_regular"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:paddingLeft="21dp"
+            android:paddingRight="21dp"
+            android:textColor="@color/text"
+            android:textSize="18sp"
+            android:layout_marginBottom="21dp"/>
+
+        <!-- Transaction Method -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transaction method"
+            android:paddingBottom="11dp"
+            android:fontFamily="@font/inter_bold"
+            android:textStyle="bold"
+            android:textColor="@color/text_heading"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtMethod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Card"
+            android:background="@drawable/bordered_box"
+            android:fontFamily="@font/inter_regular"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:paddingLeft="21dp"
+            android:paddingRight="21dp"
+            android:textColor="@color/text"
+            android:textSize="18sp"
+            android:layout_marginBottom="21dp"/>
+
+        <!-- Location -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:paddingBottom="11dp"
+            android:fontFamily="@font/inter_bold"
+            android:textStyle="bold"
+            android:textColor="@color/text_heading"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Panarottis"
+            android:background="@drawable/bordered_box"
+            android:fontFamily="@font/inter_regular"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:paddingLeft="21dp"
+            android:paddingRight="21dp"
+            android:textColor="@color/text"
+            android:textSize="18sp"
+            android:layout_marginBottom="21dp"/>
+
+        <!-- Date and Time -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date and Time"
+            android:paddingBottom="11dp"
+            android:fontFamily="@font/inter_bold"
+            android:textStyle="bold"
+            android:textColor="@color/text_heading"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtTransactionDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="18:30 - 12 April"
+            android:background="@drawable/bordered_box"
+            android:fontFamily="@font/inter_regular"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:paddingLeft="21dp"
+            android:paddingRight="21dp"
+            android:textColor="@color/text"
+            android:textSize="18sp"
+            android:layout_marginBottom="21dp"/>
+
+        <!-- Description -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:paddingBottom="11dp"
+            android:fontFamily="@font/inter_bold"
+            android:textStyle="bold"
+            android:textColor="@color/text_heading"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Had a pizza, coke and water at Panarottis for Cherika’s Birthday"
+            android:background="@drawable/bordered_box"
+            android:fontFamily="@font/inter_regular"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:paddingLeft="21dp"
+            android:paddingRight="21dp"
+            android:textColor="@color/text"
+            android:textSize="18sp"
+            android:layout_marginBottom="21dp"/>
+
+        <!-- Attached Photo -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Attached Photo"
+            android:paddingBottom="11dp"
+            android:fontFamily="@font/inter_bold"
+            android:textStyle="bold"
+            android:textColor="@color/text_heading"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtReceipt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Receipt"
+            android:textSize="18sp"
+            android:textColor="@color/text"
+            android:fontFamily="@font/inter_regular"
+            android:background="@drawable/bordered_box"
+            android:drawableEnd="@android:drawable/ic_menu_save"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:paddingLeft="21dp"
+            android:paddingRight="21dp" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -26,4 +26,6 @@ class HomeTransactionFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
+
+
 }

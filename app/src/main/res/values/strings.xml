@@ -9,4 +9,10 @@
     <string name="search">Search</string>
     <string name="email_address">Email Address</string>
     <string name="password">Password</string>
+    <string name="category_icon">Category Icon</string>
+    <string name="appbar_scrolling_view_behavior">scroll</string>
+    <string name="hello">Hello</string>
+    <string name="welcome_back">Welcome back!</string>
+    <string name="todo">TODO</string>
+    <string name="goals_and_target">Goals and Target</string>
 </resources>

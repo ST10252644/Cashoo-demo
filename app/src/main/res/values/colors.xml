@@ -25,4 +25,7 @@
     <color name="blue">#3B82F6</color>
     <color name="yellow">#FACC15</color>
     <color name="purple">#6366F1</color>
+    <color name="light_grey">#D4D6DD</color>
+    <color name="deep_green">#48B381</color>
+
 </resources>

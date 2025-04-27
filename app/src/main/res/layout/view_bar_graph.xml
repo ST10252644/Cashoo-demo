@@ -1,25 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingTop="75dp"
-    android:paddingBottom="16dp">
+    android:paddingTop="33dp"
+    android:paddingBottom="41dp"
+    android:background="@color/secondary">
 
     <!-- Total Balance -->
     <TextView
         android:id="@+id/text_total_balance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="22dp"
+        android:layout_marginStart="6dp"
         android:fontFamily="@font/inter_regular"
         android:letterSpacing="0.01"
         android:text="Total Balance"
         android:textColor="@color/text_heading"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/value_total_balance"
+        app:layout_constraintStart_toEndOf="@+id/income_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
 
     <TextView
         android:id="@+id/value_total_balance"
@@ -40,14 +43,15 @@
         android:id="@+id/text_total_expense"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Total Expense"
-        android:textSize="16sp"
-        android:textColor="@color/text_heading"
         android:layout_marginEnd="22dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:fontFamily="@font/inter_regular"
-        android:letterSpacing="0.01"/>
+        android:letterSpacing="0.01"
+        android:text="Total Expense"
+        android:textColor="@color/text_heading"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/value_total_expense"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/value_total_expense"
@@ -55,9 +59,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="3dp"
         android:layout_marginEnd="22dp"
-        android:textColor="@color/outcome"
         android:fontFamily="@font/inter_extrabold"
-        android:text="-R 2,000"
+        android:textColor="@color/outcome"
+        android:text="-R 2,000.00"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -76,7 +80,7 @@
         android:layout_marginEnd="22dp"
         android:background="@drawable/progress_bar_background"
         android:max="100"
-        android:progress="89"
+        android:progress="80"
         android:progressDrawable="@drawable/progress_bar_custom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -89,8 +93,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="22dp"
         android:layout_marginTop="15dp"
+        android:text="You've spent 20% of your expenses"
         android:fontFamily="@font/inter_regular"
-        android:text="You've spent 11% of your expenses"
         android:textColor="@color/text"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -98,13 +102,25 @@
 
     <!-- Icon (If Needed) -->
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/income_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/value_total_balance"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
         app:srcCompat="@drawable/income" />
+
+    <ImageView
+        android:id="@+id/outcome_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/value_total_expense"
+        app:layout_constraintEnd_toStartOf="@+id/text_total_expense"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/outcome" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

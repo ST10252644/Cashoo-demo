@@ -59,7 +59,7 @@
                 android:padding="20dp"
                 android:background="@android:color/white">
 
-                <!-- Expense / Saving Toggle -->
+                <!-- Expense / Saving / Income Toggle -->
                 <RadioGroup
                     android:id="@+id/rg_type"
                     android:layout_width="match_parent"
@@ -67,13 +67,13 @@
                     android:orientation="horizontal"
                     android:gravity="center"
                     android:layout_marginBottom="16dp"
-                    android:paddingHorizontal="100dp">
+                    android:paddingHorizontal="80dp">
 
                     <RadioButton
                         android:id="@+id/rb_expense"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
+                        android:layout_weight="2"
                         android:text="Expense"
                         android:textStyle="bold"
                         android:gravity="center"
@@ -87,8 +87,22 @@
                         android:id="@+id/rb_saving"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
+                        android:layout_weight="2"
                         android:text="Saving"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:button="@null"
+                        android:textColor="@color/black"
+                        android:background="@drawable/radio_underline_selector"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/rb_income"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Income"
+                        android:textStyle="bold"
                         android:gravity="center"
                         android:button="@null"
                         android:textColor="@color/black"
@@ -124,7 +138,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="12dp"
-                        android:inputType="none" />
+                        android:inputType="none"
+                        android:text="@string/search"/>
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <!-- Name -->
@@ -184,8 +199,9 @@
                         android:padding="12dp" />
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <!-- Transaction Method -->
+                <!-- Transaction Method Heading -->
                 <TextView
+                    android:id="@+id/heading_transaction_method"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Transaction method"
@@ -212,8 +228,9 @@
                         android:padding="12dp" />
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <!-- Location -->
+                <!-- Location Heading -->
                 <TextView
+                    android:id="@+id/heading_location"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Location"
@@ -239,6 +256,7 @@
                         android:layout_height="wrap_content"
                         android:padding="12dp" />
                 </com.google.android.material.textfield.TextInputLayout>
+
 
                 <!-- Date -->
                 <TextView

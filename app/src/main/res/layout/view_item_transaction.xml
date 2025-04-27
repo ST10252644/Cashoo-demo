@@ -28,7 +28,7 @@
         android:paddingStart="12dp">
 
         <TextView
-            android:id="@+id/tv_title"
+            android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Travel Deposit"
@@ -37,7 +37,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/tv_timestamp"
+            android:id="@+id/datetime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="18:31 - 12 April 2025"
@@ -47,7 +47,7 @@
 
     <!-- Amount -->
     <TextView
-        android:id="@+id/tv_amount"
+        android:id="@+id/amount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="+R150.00"
